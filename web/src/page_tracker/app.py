@@ -20,7 +20,6 @@ def index():
         return f"This page has been seen {page_views} times."
 
 
-
 @cache
 def redis():
     return Redis.from_url(os.getenv("REDIS_URL", "redis://localhost:6379"))
